@@ -13,12 +13,12 @@
                         <nav>
                             <ul class="nav nav-left-lines" id="main-nav">
                                 <!--HOME-->
-                                <li class="active-item"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span>Dashboard</span></a></li>
+                                <li class="active-item"><a href="{{URL::to('/dashboard')}}"><i class="fa fa-home" aria-hidden="true"></i><span>Dashboard</span></a></li>
                                 <!--USERS-->
                                 <li class="has-child-item close-item">
                                     <a><i class="fa fa-users" aria-hidden="true"></i><span>Users</span></a>
                                     <ul class="nav child-nav level-1">
-                                        <li><a href="">All Users</a></li>
+                                        <li><a href="{{route('all-users')}}">All Users</a></li>
                                     </ul>
                                 </li>
                    

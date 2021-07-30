@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SuperadminController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,5 @@ use App\Http\Controllers\HomeController;
 // });
 Route::get('/',[SuperadminController::class,'Login']);
 Route::get('/dashboard',[HomeController::class,'adminDashboard']);
+//users route
+Route::get('all-users',[UsersController::class,'allUsers'])->name('all-users');
